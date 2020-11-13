@@ -10,6 +10,88 @@
 background: rgb(0,0,0);
 background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(25,0,255,1) 48%, rgba(0,241,255,1) 86%);
 }
+#wrapcube {
+    width: 250px;
+    height: 213px;
+    margin: 20px auto;
+}
+#D3Cube {
+    width: 112px;
+    height: 112px;
+    top: 50px;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-360deg) rotateY(-38deg) rotateZ(0deg);
+    -moz-transform: rotateX(-360deg) rotateY(-38deg) rotateZ(0deg);
+    -webkit-transform: rotateX(-360deg) rotateY(-38deg) rotateZ(0deg);
+    margin: auto;
+    position: relative;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: cubeRotation 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: cubeRotation 1s infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes cubeRotation {
+    100%   {	-webkit-transform: rotateX(-360deg) rotateY(-38deg) rotateZ(0deg);	}
+    100%   {	-webkit-transform: rotateX(-360deg) rotateY(-128deg) rotateZ(0deg);	}
+    100%   {	-webkit-transform: rotateX(-360deg) rotateY(-398deg) rotateZ(0deg);	}
+}
+/* Standard syntax */
+@keyframes cubeRotation {
+    100%   {	transform: rotateX(-360deg) rotateY(-38deg) rotateZ(0deg);	}
+    100%   {	transform: rotateX(-360deg) rotateY(-238deg) rotateZ(0deg);	}
+    100%   {	transform: rotateX(-360deg) rotateY(-398deg) rotateZ(0deg);	}
+}
+#D3Cube > div {
+    position: absolute;
+
+    width: 112px;
+    height: 112px;
+    float: left;
+    overflow: hidden;
+	opacity: 0.85;
+}
+#side1 {
+    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+	background-color: black;
+}
+#side2 {
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+	background-color: black;
+}
+#side3 {
+    transform: translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: translateX(0px) translateY(0px) translateZ(56px);
+	background-color: black;
+}
+#side4 {
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+	background-color: black;
+color:white;
+}
+#side5 {
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+	background-color: black;
+}
+#side6 {
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+	background-color: black;
+}
+
+side2 and side4 missing on purpose
 counter{background:white; border:2px solid black; height:100px;}
 titler{font-size:40px;}
  .loader {
@@ -41,13 +123,22 @@ ye{color:yellow;}
   </script>
 <pre>
 <center><titler><b><ye>WINDOWS</ye><pi>9</pi><bl>3</bl></b></titler>
-<font color=white>w93mystery@gmail.com</center>
+<font color=white>w93mystery@gmail.com</font></center>
 <drags><img src="https://windows-93.github.io/drag.png" width=40 height=40>
 <div id="draggable" class="ui-widget-content">________________
 <Center><b><ye>WINDOWS</ye><pi>9</pi><bl>3</bl></b><center></div>                 
-<div id="draggable2" class="ui-widget-content"><img src="https://windows-93.github.io/win93.jpg" width=100 height=100></div>
-</drags>
+<div id="draggable2" class="ui-widget-content"><img src="https://windows-93.github.io/win93.jpg" width=100 height=100></div></drags></pre><div id="wrapcube">
+	<div id="D3Cube">
+		<div id="side1"></div>
+		<div id="side2"></div>
+		<div id="side3"></div>
+<div id="side4"><pre><center>WINDOWS93
 
+..or is it?</center></pre></div>
+		<div id="side5"></div>
+		<div id="side6"></div>
+	</div>
+</div><pre>
 
 
 
